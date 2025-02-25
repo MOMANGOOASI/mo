@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richiedi Preventivo - London Coop</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header con nuovo logo -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo-link" style="display: flex; align-items: center;">
+        <svg width="120" height="120" viewBox="0 0 80 120" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="40" height="120" fill="#1a73e8"/>
+          <rect x="40" y="80" width="40" height="40" fill="#e53935"/>
+        </svg>
+        <span class="logo-text" style="margin-left: 10px; font-size: 1.8rem; font-weight: 700; color: var(--dark-gray); font-family: var(--font-family);">
+          London Coop
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Sezione Preventivo -->
+  <main>
+    <section class="preventivo">
+      <div class="container">
+        <h2>Richiedi Preventivo</h2>
+        <form action="https://formspree.io/f/xvgzdvra" method="POST" class="form-preventivo">
+          <div class="form-group">
+            <label for="name">Nome e Cognome *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefono *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Servizio Richiesto *</label>
+            <select id="service" name="service" required>
+              <option value="">Seleziona un servizio</option>
+              <option value="facchinaggio">Facchinaggio</option>
+              <option value="pulizie">Pulizie Industriali/Private</option>
+              <option value="traslochi">Traslochi e Trasporti</option>
+              <option value="stoccaggio">Stoccaggio</option>
+              <option value="manutenzione">Manutenzione Edile</option>
+              <option value="piastrelle">Posatura Piastrelle</option>
+              <option value="allestimenti">Montatura Allestimenti</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Descrizione Richiesta *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn cta-button">Invia Richiesta</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer senza link a Privacy, Cookie, ecc. (come in index.html) -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 London Società Cooperativa - P.IVA: 09198390966</p>
+      <div class="footer-brand">
+        <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="20" height="20" fill="#1a73e8"/>
+          <rect x="10" y="35" width="20" height="20" fill="#1a73e8"/>
+          <rect x="10" y="60" width="20" height="20" fill="#1a73e8"/>
+          <rect x="30" y="60" width="20" height="20" fill="#e53935"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Coop - Facility Management & Progetti</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome per le icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header con nuovo logo -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo-link" style="display: flex; align-items: center;">
+        <svg width="120" height="120" viewBox="0 0 80 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- Rettangolo verticale -->
+          <rect x="0" y="0" width="40" height="120" fill="#1a73e8"/>
+          <!-- Rettangolo orizzontale attaccato al fondo -->
+          <rect x="40" y="80" width="40" height="40" fill="#e53935"/>
+        </svg>
+        <span class="logo-text" style="margin-left: 10px; font-size: 1.8rem; font-weight: 700; color: var(--dark-gray); font-family: var(--font-family);">
+          London Coop
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Sezione Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Facility Management & Gestione Progetti</h1>
+        <p>Affidati a London Coop per la gestione completa dei tuoi spazi con professionalità e competenza.</p>
+        <!-- Pulsante che apre il modale del preventivo -->
+        <a href="#" class="btn cta-preventivo">Richiedi Preventivo</a>
+      </div>
+    </section>
+
+    <!-- Sezione Servizi -->
+    <section class="servizi">
+      <div class="container">
+        <h2>I Nostri Servizi</h2>
+        <div class="grid servizi-grid">
+          <div class="service-item">
+            <i class="fas fa-dolly"></i>
+            <h3>Facchinaggio</h3>
+            <p>Movimentazione merci con personale qualificato e attrezzature moderne.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-broom"></i>
+            <h3>Pulizie</h3>
+            <p>Pulizie industriali e private per ambienti impeccabili e sani.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-truck"></i>
+            <h3>Traslochi e Trasporti</h3>
+            <p>Soluzioni logistiche complete per traslochi e trasporti sicuri.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-warehouse"></i>
+            <h3>Stoccaggio</h3>
+            <p>Spazi sicuri e flessibili per il deposito di materiali e merci.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-hard-hat"></i>
+            <h3>Manutenzione Edile</h3>
+            <p>Interventi di manutenzione e ristrutturazione, anche in cartongesso.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-th"></i>
+            <h3>Posatura Piastrelle</h3>
+            <p>Installazioni precise per pavimenti e rivestimenti di alta qualità.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-store"></i>
+            <h3>Allestimenti e Design</h3>
+            <p>Progetti personalizzati: le nostre mani creano spazi dove l'architettura incontra l'arte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Chi Siamo con certificazioni ISO -->
+    <section class="chi-siamo">
+      <div class="container">
+        <h2>La nostra storia, i nostri valori</h2>
+        <p>
+          London Società Cooperativa nasce dalla passione per il lavoro ben fatto e dalla volontà di creare un'azienda che metta al centro la qualità del servizio e la soddisfazione del cliente.
+        </p>
+        <p>
+          Ogni giorno, il nostro team affronta nuove sfide con entusiasmo e competenza, trasformando ogni progetto in una storia di successo.
+        </p>
+        <!-- Certificazioni ISO -->
+        <div class="certifications">
+          <div class="certificate">
+            <i class="fas fa-certificate"></i>
+            <span>ISO 9001:2015 - QUALITÀ</span>
+          </div>
+          <div class="certificate">
+            <i class="fas fa-certificate"></i>
+            <span>ISO 14001:2015 - AMBIENTE</span>
+          </div>
+          <div class="certificate">
+            <i class="fas fa-certificate"></i>
+            <span>ISO 45001:2018 - SICUREZZA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Partner con i loghi aggiornati -->
+    <section class="partner">
+      <div class="container">
+        <h2>I Nostri Partner</h2>
+        <div class="grid partner-grid">
+          <!-- Manteniamo solo il partner ALER (foto univoca) -->
+          <div class="partner-item">
+            <img src="aler.png" alt="ALER">
+          </div>
+          <div class="partner-item">
+            <img src="atm.png" alt="ATM Milano">
+          </div>
+          <div class="partner-item">
+            <img src="cocacola.png" alt="Coca-Cola">
+          </div>
+          <div class="partner-item">
+            <img src="piazza italia.png" alt="Piazza Italia">
+          </div>
+          <div class="partner-item">
+            <img src="fieramilano.png" alt="Fiera Milano">
+          </div>
+          <div class="partner-item">
+            <img src="mm.jpg" alt="MM Milano">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Newsletter</h2>
+        <p>Iscriviti per ricevere aggiornamenti, offerte speciali e notizie sul nostro lavoro.</p>
+        <form class="newsletter-form" action="#" method="POST">
+          <input type="email" placeholder="La tua email" required>
+          <button type="submit" class="btn">Iscriviti</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sezione Contatti & Sedi -->
+    <section class="contatti">
+      <div class="container">
+        <h2>Contattaci & Sedi</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>Email: <a href="mailto:london.soc.coop@gmail.com">london.soc.coop@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>Telefono: <a href="tel:+390283554681">02 8355 4681</a></span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Sede Aziendale: Viale Monza, 270, 20128 Milano MI</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Sede Operativa: Cusano Milanino, Viale Bellini 32</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Orari: Lun-Ven 08:30–17:30 | Sab-Dom Chiuso</span>
+          </div>
+        </div>
+        <div class="company-info">
+          <h3>Informazioni Aziendali</h3>
+          <p><strong>Ragione Sociale:</strong> LONDON SOCIETA' COOPERATIVA</p>
+          <p><strong>P.IVA / Codice Fiscale:</strong> 09198390966</p>
+          <p><strong>REA:</strong> 2075260</p>
+          <p><strong>Fatturato:</strong> € 1.026.408,00 (2022)</p>
+          <p><strong>Dipendenti:</strong> 46 (2024)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer con pagine legali -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 London Società Cooperativa - P.IVA: 09198390966</p>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookie.html">Cookie Policy</a></li>
+        <li><a href="termini.html">Termini e Condizioni</a></li>
+        <li><a href="datatreatment.html">Trattamento Dati</a></li>
+      </ul>
+      <div class="footer-brand">
+        <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="20" height="20" fill="#1a73e8"/>
+          <rect x="10" y="35" width="20" height="20" fill="#1a73e8"/>
+          <rect x="10" y="60" width="20" height="20" fill="#1a73e8"/>
+          <rect x="30" y="60" width="20" height="20" fill="#e53935"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Banner Cookie Consent -->
+  <div id="cookieConsent" class="cookie-consent">
+    <p>Utilizziamo i cookie per migliorare la tua esperienza. Continuando a navigare, accetti il loro utilizzo.</p>
+    <button id="acceptCookies" class="btn">Accetta</button>
+    <a href="cookie.html" class="btn">Leggi di più</a>
+  </div>
+
+  <!-- Modale Preventivo -->
+  <div id="preventivoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Richiedi Preventivo</h2>
+      <form action="https://formspree.io/f/xvgzdvra" method="POST" class="form-preventivo">
+        <div class="form-group">
+          <label for="name">Nome e Cognome *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefono *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Servizio Richiesto *</label>
+          <select id="service" name="service" required>
+            <option value="">Seleziona un servizio</option>
+            <option value="facchinaggio">Facchinaggio</option>
+            <option value="pulizie">Pulizie Industriali/Private</option>
+            <option value="traslochi">Traslochi e Trasporti</option>
+            <option value="stoccaggio">Stoccaggio</option>
+            <option value="manutenzione">Manutenzione Edile</option>
+            <option value="piastrelle">Posatura Piastrelle</option>
+            <option value="allestimenti">Montatura Allestimenti</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Descrizione Richiesta *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn cta-button">Invia Richiesta</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
